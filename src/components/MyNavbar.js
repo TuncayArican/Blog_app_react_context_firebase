@@ -93,35 +93,20 @@ const MyNavbar = () => {
             </div>
           ) : (
             <div>
-              <IconButton
-                size="large"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-  
-                <AccountCircle />
-              </IconButton>
-
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={() => navigate("/register")}>Register</MenuItem>
-                <MenuItem onClick={() => navigate("/login")}>Login</MenuItem>
-              </Menu>
+                          <>
+                <button
+                  className="ms-2 btn btn-outline-light"
+                  onClick={() => navigate('/login')}
+                >
+                  Login
+                </button>
+                <button
+                  className="ms-2 btn btn-outline-light"
+                  onClick={() => navigate('/register')}
+                >
+                  Register
+                </button>
+              </>
             </div>
           )}
         </Toolbar>

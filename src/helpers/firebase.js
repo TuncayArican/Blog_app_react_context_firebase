@@ -53,7 +53,6 @@ export const logout = () => {
 };
 
 export const loginWithGoogle = () => {
-  console.log("merhaba")
   signInWithPopup(auth, googleProvider)
     .then((result) => {
       console.log(result)
