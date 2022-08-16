@@ -1,5 +1,5 @@
 import app from "./firebase"
-import { getDatabase,onValue,ref, push, set, remove, update} from "firebase/database";
+import { getDatabase,onValue,ref, remove, update} from "firebase/database";
 import { useEffect, useState } from "react";
 
 

@@ -14,8 +14,8 @@ const Details = ({index }) => {
   const navigate = useNavigate();
   const { DeleteUser} = useContext(BlogContext);
 
-    const { currentUser } = useContext(AuthContext);
-  const user = currentUser?.email
+const { currentUser } = useContext(AuthContext);
+
   const { state } = useLocation();
   console.log(state);
 
