@@ -9,6 +9,7 @@ import Details from "../pages/Details";
 import PrivateRouter from "./PrivateRouter";
 import BlockCard from "../components/BlockCard";
 import UpdateBlog from "../pages/UpdateBlog";
+import About from "../pages/About";
 
 
 const AppRouter = () => {
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <MyNavbar />
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/new-blog" element={<NewBlog/>} />
