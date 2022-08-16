@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { useNavigate, useLocation } from "react-router-dom";
 import { BlogContext } from '../contexts/BlogContext';
-import { AuthContext } from "../contexts/AuthContext";
+
 
 
 const Details = ({index }) => {
