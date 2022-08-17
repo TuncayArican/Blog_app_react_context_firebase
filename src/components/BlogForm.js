@@ -13,7 +13,7 @@ const BlogForm = ({item, index}) => {
 
   return (
 
-      <Card sx={{ maxWidth: 350, m: 3, maxHeight: 600 }} key={index}>
+      <Card sx={{ maxWidth: 350, m: 5, maxHeight: 600 }} key={index}>
               <CardMedia
                 component="img"
                 height="250"
