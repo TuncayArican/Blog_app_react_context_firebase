@@ -12,8 +12,8 @@ const BlogForm = ({item, index}) => {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <Card sx={{ maxWidth: 4000, m: 3, maxHeight: 1000 }} key={index}>
+
+      <Card sx={{ maxWidth: 350, m: 3, maxHeight: 600 }} key={index}>
               <CardMedia
                 component="img"
                 height="250"
@@ -42,7 +42,6 @@ const BlogForm = ({item, index}) => {
 
             </Card>
 
-    </div>
   )
 }
 

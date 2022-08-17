@@ -34,7 +34,7 @@ const Details = ({ index }) => {
       justifyContent="space-evenly"
       flexWrap="wrap"
     >
-      <Card sx={{ maxWidth: 400, m: 5, maxHeight: 1000 }} key={index}>
+      <Card sx={{ maxWidth: 350, m: 5, maxHeight: 600 }} key={index}>
         <CardMedia
           component="img"
           height="250"

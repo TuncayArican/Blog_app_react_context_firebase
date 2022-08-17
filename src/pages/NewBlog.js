@@ -33,7 +33,7 @@ const NewBlog = () => {
 
 
   return (
-    <Container maxWidth="sm">
+   
       <Box
         sx={{
           height: "100vh",
@@ -97,7 +97,7 @@ const NewBlog = () => {
           </Grid>
         </form>
       </Box>
-    </Container>
+
   )
 }
 
