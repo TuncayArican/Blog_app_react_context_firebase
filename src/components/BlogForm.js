@@ -13,7 +13,7 @@ const BlogForm = ({item, index}) => {
 
   return (
     <div>
-      <Card sx={{ maxWidth: 345, m: 5, maxHeight: 600 }} key={index}>
+      <Card sx={{ maxWidth: 4000, m: 3, maxHeight: 1000 }} key={index}>
               <CardMedia
                 component="img"
                 height="250"
@@ -33,12 +33,13 @@ const BlogForm = ({item, index}) => {
                 <Typography variant="body2" color="text.secondary">
                   {item.content}
                 </Typography>
-              </CardContent>
-              <Button onClick={() =>
+                <Button onClick={() =>
               navigate(`details/${item.id}`, { state: item, replace: false })
             } >
                   Details
               </Button>
+              </CardContent>
+
             </Card>
 
     </div>

@@ -26,6 +26,7 @@ const Details = ({ index }) => {
   };
 
   return (
+    <div class="container">
     <Box
       xs={{ d: "flex" }}
       display="flex"
@@ -33,7 +34,7 @@ const Details = ({ index }) => {
       justifyContent="space-evenly"
       flexWrap="wrap"
     >
-      <Card sx={{ maxWidth: 345, m: 5, maxHeight: 600 }} key={index}>
+      <Card sx={{ maxWidth: 400, m: 5, maxHeight: 1000 }} key={index}>
         <CardMedia
           component="img"
           height="250"
@@ -51,8 +52,7 @@ const Details = ({ index }) => {
           <Typography variant="body2" color="text.secondary">
             {state.content}
           </Typography>
-        </CardContent>
-        {state.user === currentUser?.email && (
+          {state.user === currentUser?.email && (
           <>
             <Button onClick={() => handleDelete(state.id)}>Delete</Button>
             <Button
@@ -67,8 +67,11 @@ const Details = ({ index }) => {
             </Button>
           </>
         )}
+        </CardContent>
+        
       </Card>
     </Box>
+    </div>
   );
 };
 
