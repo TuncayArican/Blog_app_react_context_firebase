@@ -10,6 +10,9 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
+import Toastify from "./toastify"
+
+
 const app = initializeApp({
   apiKey: process.env.REACT_APP_apiKey,
   authDomain: process.env.REACT_APP_authDomain,
@@ -40,14 +43,17 @@ export const userObserver = (setCurrentUser) => {
 };
 
 export const signup = (email, password) => {
+  Toastify("Signed up Successfully")
   return createUserWithEmailAndPassword(auth, email, password);
 };
 
 export const login = (email, password) => {
+  Toastify("Logged in Successfully")
   return signInWithEmailAndPassword(auth, email, password);
 };
 
 export const logout = () => {
+  Toastify("Logged out Successfully")
   signOut(auth);
   
 };

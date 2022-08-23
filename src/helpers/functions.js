@@ -1,6 +1,7 @@
 import app from "./firebase"
 import { getDatabase,onValue,ref, remove, update} from "firebase/database";
 import { useEffect, useState } from "react";
+import Toastify from "./toastify"
 
 
 /// I have moved ADD user part to BlogContext in order to be able to add user automatically
@@ -45,13 +46,14 @@ export const DeleteUser=(id)=>{
     console.log(id);
    const db = getDatabase(app);
     remove(ref(db,"milestone/"+id));
+    Toastify("Deleted Successfully")
 }
 
 export const UpdateUser=(info)=>{
     const db = getDatabase(app);
     const updates={}
     updates["milestone/"+info.id]=info
-
+    Toastify("Updated Successfully")
     return update(ref(db),updates)
 
 }

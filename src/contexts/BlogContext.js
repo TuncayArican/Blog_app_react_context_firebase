@@ -3,6 +3,7 @@ import { useFetch, DeleteUser, UpdateUser} from "../helpers/functions";
 import app from "../helpers/firebase"
 import { getDatabase,ref, push, set} from "firebase/database";
 import { AuthContext } from "../contexts/AuthContext";
+import Toastify from "./../helpers/toastify"
 
 export const BlogContext = createContext();
 
@@ -26,6 +27,8 @@ const BlogContextProvider = ({ children }) => {
         content:info.content,
         user : currentUser.email
     })
+    
+    Toastify("Added Successfully")
 
 }
     
