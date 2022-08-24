@@ -46,7 +46,7 @@ export const DeleteUser=(id)=>{
     console.log(id);
    const db = getDatabase(app);
     remove(ref(db,"milestone/"+id));
-    Toastify("Deleted Successfully")
+    Toastify("Deleted")
 }
 
 export const UpdateUser=(info)=>{
