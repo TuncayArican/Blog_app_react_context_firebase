@@ -33,7 +33,7 @@ const BlogContextProvider = ({ children }) => {
 }
     
   const [info,setInfo]=useState(initialValues)
-
+  console.log(info)
   const {isLoading,bloglist} = useFetch();
   
 

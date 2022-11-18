@@ -22,7 +22,8 @@ const NewBlog = () => {
     const { name, value } = e.target;
     console.log(name,value)
     console.log("merhaba")
-    setInfo({ ...info, [name]: value });
+    setInfo({ ...info, [name]: value })
+    console.log(info)
   };
 
   const handleAdd= () => {

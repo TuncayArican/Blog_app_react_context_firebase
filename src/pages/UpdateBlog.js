@@ -14,11 +14,12 @@ const UpdateBlog = () => {
 
   const navigate = useNavigate();
   const { state } = useLocation();
-
+console.log(state);
   const { UpdateUser} = useContext(BlogContext);
 
   
   const [info,setInfo]=useState(state)
+  console.log(info)
 
 
   const handleChange = (e) => {
@@ -26,6 +27,7 @@ const UpdateBlog = () => {
     const { name, value } = e.target;
     console.log(name,value)
     console.log("merhaba")
+    console.log(info)
     setInfo({ ...info, [name]: value });
   };
 
